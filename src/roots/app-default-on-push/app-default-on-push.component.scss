@@ -1,0 +1,15 @@
+.block {
+    cursor: not-allowed;
+}
+
+.connector-line.right {
+    left: 100%;
+}
+
+.connector-line.left {
+    left: -50%;
+}
+
+.connector-line.mid {
+    left: 50%;
+}

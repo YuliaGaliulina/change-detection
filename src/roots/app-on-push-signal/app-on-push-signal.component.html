@@ -1,0 +1,23 @@
+<h2>Signals</h2>
+
+<div class="block-container">
+    <div class="block-wrap">
+        <div class="block block-blue" [style.width.px]="400">
+            <p>Root (OnPush)</p>
+            <svg class="connector-line left">
+                <line x1="200" y1="5" x2="0" y2="50"/>
+            </svg>
+            <svg class="connector-line right ">
+                <line x1="200" y1="50" x2="0" y2="5"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="block-line">
+        <app-block-onpush-signal [depth]="2"></app-block-onpush-signal>
+        <app-block-default-signal [depth]="2"></app-block-default-signal>
+    </div>
+</div>
+
+{{ highlightBlock() }}
+

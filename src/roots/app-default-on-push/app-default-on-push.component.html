@@ -1,0 +1,25 @@
+<h2>OnPush + Default</h2>
+
+<div class="block-container">
+    <div class="block-wrap">
+        <div class="block block-red" [style.width.px]="400">
+            <p>Root (Default)</p>
+            <svg class="connector-line left">
+                <line x1="200" y1="5" x2="0" y2="50"/>
+            </svg>
+            <svg class="connector-line mid">
+                <line x1="0" y1="5" x2="0" y2="50"/>
+            </svg>
+            <svg class="connector-line right">
+                <line x1="200" y1="50" x2="0" y2="5"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="block-line">
+        <app-block-default [depth]="2"></app-block-default>
+        <app-block-onpush [depth]="2"></app-block-onpush>
+        <app-block-onpush [depth]="2"></app-block-onpush>
+    </div>
+</div>
+{{ highlightBlock() }}
